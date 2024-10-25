@@ -13,11 +13,13 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private PlayerAwarenessController _playerAwarenessController;
     private Vector2 _targetDirection;
+    private float _changeDirectionCoolDown;
 
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _playerAwarenessController = GetComponent<PlayerAwarenessController>();
+        _targetDirection = transform.up;
     }
 
     private void FixedUpdate()
@@ -29,22 +31,34 @@ public class EnemyMovement : MonoBehaviour
 
     private void UpdateTargetDirection()
     {
-        if (_playerAwarenessController.AwareOfPlayer) 
+        HandleRandomDirectionChange();
+        HandlePlayerTargetting();
+	}   
+
+    private void HandleRandomDirectionChange()
+    {
+        _changeDirectionCoolDown -= Time.deltaTime; 
+
+        if ( _changeDirectionCoolDown <= 0 )
         {
-            _targetDirection = _playerAwarenessController.DirectionToPlayer;
+            float angleChange = Random.Range( -90f, 90f );
+            Quaternion rotation = Quaternion.AngleAxis(angleChange, transform.forward );
+            _targetDirection = rotation * _targetDirection;
+
+            _changeDirectionCoolDown = Random.Range(1f, 5f);
         }
-        else
-        {
-            _targetDirection = Vector2.zero;
-        }    
-    }   
+    }
+
+    private void HandlePlayerTargetting()
+    {
+		if (_playerAwarenessController.AwareOfPlayer)
+		{
+			_targetDirection = _playerAwarenessController.DirectionToPlayer;
+		}
+	}
     
     private void RotateTowardsTarget()
     {
-        if (_targetDirection == Vector2.zero)
-        {
-            return;
-        }    
 
         Quaternion targetRotation = Quaternion.LookRotation(transform.forward, _targetDirection);
         Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
@@ -54,13 +68,6 @@ public class EnemyMovement : MonoBehaviour
 
     private void SetVelocity()
     {
-        if (_targetDirection == Vector2.zero)
-        {
-            _rigidbody.velocity = Vector2.zero;
-        }    
-        else
-        {
             _rigidbody.velocity = transform.up * _speed;
-        }    
     }
 }
