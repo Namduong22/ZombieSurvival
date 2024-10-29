@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 544169121541386953}
   - component: {fileID: 7377356912540792712}
   - component: {fileID: 8568090747508216766}
+  - component: {fileID: 3631494445379794723}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -326,6 +327,18 @@ MonoBehaviour:
           m_StringArgument: OnDied
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3631494445379794723}
+        m_TargetAssemblyTypeName: EnemyCollectableDrop, Assembly-CSharp
+        m_MethodName: RandomlyDropCollectable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: OnDied
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDamaged:
     m_PersistentCalls:
       m_Calls: []
@@ -357,3 +370,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _killScore: 10
+--- !u!114 &3631494445379794723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7359018527025135753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d1d32bbe90783b49b426a5e03849688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _changeOfCollectableDrop: 0.3
