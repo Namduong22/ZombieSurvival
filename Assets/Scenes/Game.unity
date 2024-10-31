@@ -725,7 +725,7 @@ GameObject:
   - component: {fileID: 975145211}
   - component: {fileID: 975145212}
   - component: {fileID: 975145213}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -991,7 +991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15575507d4e683a4fb69561072303e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _invincibilityDuration: 3
+  _invincibilityDuration: 2
   _flashColor: {r: 1, g: 1, b: 1, a: 0.50980395}
   _numberOfFlashes: 10
 --- !u!114 &975145210
@@ -1075,7 +1075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1062833961}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gun Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1531,7 +1531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800924594}
   - component: {fileID: 1800924595}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
