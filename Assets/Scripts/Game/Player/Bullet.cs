@@ -6,9 +6,12 @@ public class Bullet : MonoBehaviour
 {
 	private Camera _camera;
 
+	AudioManager audioManager;
+
 	private void Awake()
 	{
 		_camera = Camera.main;
+		audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 	}
 
 	private void Update()
@@ -20,6 +23,7 @@ public class Bullet : MonoBehaviour
 	{
 		if (collision.GetComponent<EnemyMovement>())
 		{
+			audioManager.PlaySFX(audioManager.zombiesHurt);
 			HealthController healthController = collision.GetComponent<HealthController>();
 			healthController.TakeDamage(10);
 			Destroy(gameObject);

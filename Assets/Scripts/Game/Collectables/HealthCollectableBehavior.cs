@@ -6,9 +6,17 @@ public class HealthCollectableBehavior : MonoBehaviour , ICollectableBehavior
 {
     [SerializeField]
     private float _healthAmount;
-    public void OnCollected(GameObject player)
+
+	AudioManager audioManager;
+	private void Awake()
+	{
+		audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+	}
+
+	public void OnCollected(GameObject player)
 
     {
-        player.GetComponent<HealthController>().AddHealth(_healthAmount);
+		audioManager.PlaySFX(audioManager.healthPickup);
+		player.GetComponent<HealthController>().AddHealth(_healthAmount);
     }
 }

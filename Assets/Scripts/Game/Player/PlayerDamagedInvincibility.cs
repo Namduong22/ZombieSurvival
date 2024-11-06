@@ -15,13 +15,17 @@ public class PlayerDamagedInvincibility : MonoBehaviour
 
     private InvincibilityController _invincibilityController;
 
+	AudioManager audioManager;
+
 	private void Awake()
 	{
+		audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 		_invincibilityController = GetComponent<InvincibilityController>();
 	}
 
 	public void StartInvincibility()
     {
+		audioManager.PlaySFX(audioManager.playerHurt);
 		_invincibilityController.StartInvincibility(_invincibilityDuration, _flashColor,_numberOfFlashes);
     }
 }

@@ -21,6 +21,13 @@ public class PlayerShoot : MonoBehaviour
     private bool _fireSingle;
     private float _lastFireTime;
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
 
     void Update()
     {
@@ -40,6 +47,7 @@ public class PlayerShoot : MonoBehaviour
 
 	private void FireBullet()
 	{
+        audioManager.PlaySFX(audioManager.gunshot);
 		GameObject bullet = Instantiate(_bulletPrefab, _gunOffset.position, transform.rotation);
         Rigidbody2D rigidbody = bullet.GetComponent<Rigidbody2D>();
 

@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class EnemyDestroyController : MonoBehaviour
 {
-    public void DestroyEnemy(float delay)
+	AudioManager audioManager;
+
+	private void Awake()
+	{
+		audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+	}
+
+	public void DestroyEnemy(float delay)
     {
-        Destroy(gameObject, delay);
+		audioManager.PlaySFX(audioManager.zombiesDeath);
+		Destroy(gameObject, delay);
     }
 }
