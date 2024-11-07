@@ -23,7 +23,7 @@ public class PlayerShoot : MonoBehaviour
 
     AudioManager audioManager;
 
-    private void Awake()
+	private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
@@ -45,7 +45,7 @@ public class PlayerShoot : MonoBehaviour
         }
     }
 
-	private void FireBullet()
+	public void FireBullet()
 	{
         audioManager.PlaySFX(audioManager.gunshot);
 		GameObject bullet = Instantiate(_bulletPrefab, _gunOffset.position, transform.rotation);
@@ -63,4 +63,18 @@ public class PlayerShoot : MonoBehaviour
             _fireSingle = true;
         }
     }
+	public void SetBulletPrefab(GameObject newBulletPrefab)
+	{
+		_bulletPrefab = newBulletPrefab;
+	}
+
+	public void SetBulletSpeed(float newBulletSpeed)
+	{
+		_bulletSpeed = newBulletSpeed;
+	}
+
+	public void SetTimeBetweenShots(float newTimeBetweenShots)
+	{
+		_timeBetweenShots = newTimeBetweenShots;
+	}
 }

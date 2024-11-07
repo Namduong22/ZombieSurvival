@@ -1016,6 +1016,7 @@ MonoBehaviour:
   _collectablePrefabs:
   - {fileID: 684174665013223126, guid: 2020df339e5ad8a40a6da216d76ae3b6, type: 3}
   - {fileID: 3253689700204354463, guid: c4bbe51f70f45284687c722c8760beb5, type: 3}
+  - {fileID: 1509076488031570786, guid: a824bdfc95d349f4f9f95653f8572e91, type: 3}
 --- !u!4 &1089619371
 Transform:
   m_ObjectHideFlags: 0

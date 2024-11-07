@@ -14,7 +14,6 @@ public class HealthCollectableBehaviour : MonoBehaviour, ICollectableBehaviour
 	}
 
 	public void OnCollected(GameObject player)
-
     {
 		audioManager.PlaySFX(audioManager.healthPickup);
 		player.GetComponent<HealthController>().AddHealth(_healthAmount);
