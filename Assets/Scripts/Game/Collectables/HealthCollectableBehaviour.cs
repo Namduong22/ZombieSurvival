@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthCollectableBehavior : MonoBehaviour , ICollectableBehavior
+public class HealthCollectableBehaviour : MonoBehaviour, ICollectableBehaviour
 {
     [SerializeField]
     private float _healthAmount;

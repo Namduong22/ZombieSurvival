@@ -1015,6 +1015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _collectablePrefabs:
   - {fileID: 684174665013223126, guid: 2020df339e5ad8a40a6da216d76ae3b6, type: 3}
+  - {fileID: 3253689700204354463, guid: c4bbe51f70f45284687c722c8760beb5, type: 3}
 --- !u!4 &1089619371
 Transform:
   m_ObjectHideFlags: 0
@@ -1414,7 +1415,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.35
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1681,7 +1682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15575507d4e683a4fb69561072303e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _invincibilityDuration: 2
+  _invincibilityDuration: 3
   _flashColor: {r: 1, g: 1, b: 1, a: 0.50980395}
   _numberOfFlashes: 10
 --- !u!114 &1653457848

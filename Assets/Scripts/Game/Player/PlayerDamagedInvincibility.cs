@@ -26,6 +26,6 @@ public class PlayerDamagedInvincibility : MonoBehaviour
 	public void StartInvincibility()
     {
 		audioManager.PlaySFX(audioManager.playerHurt);
-		_invincibilityController.StartInvincibility(_invincibilityDuration, _flashColor,_numberOfFlashes);
+		_invincibilityController.StartInvincibility(_invincibilityDuration, _flashColor, _numberOfFlashes);
     }
 }

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    private ICollectableBehavior _collectableBehavior;
+    private ICollectableBehaviour _collectableBehaviour;
 
     private void Awake()
     {
-        _collectableBehavior = GetComponent<ICollectableBehavior>();
+        _collectableBehaviour = GetComponent<ICollectableBehaviour>();
     }
    private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,7 +16,7 @@ public class Collectable : MonoBehaviour
 
         if (player != null)
         {
-            _collectableBehavior.OnCollected(player.gameObject);
+            _collectableBehaviour.OnCollected(player.gameObject);
             Destroy(gameObject);
         }
     }

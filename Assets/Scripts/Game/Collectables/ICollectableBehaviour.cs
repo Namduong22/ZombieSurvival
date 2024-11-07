@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ICollectableBehavior
+public interface ICollectableBehaviour
 {
     void OnCollected(GameObject player);
 }
