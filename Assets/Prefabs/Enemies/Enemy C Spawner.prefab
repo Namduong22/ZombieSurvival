@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7150392066265575731
+--- !u!1001 &8321280788372233651
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,18 +11,18 @@ PrefabInstance:
     - target: {fileID: 2934801391957107941, guid: 23fd6dd2a734db74b888dceb8fbf80fd, type: 3}
       propertyPath: _enemyPrefab
       value: 
-      objectReference: {fileID: 4234939476576890964, guid: 12e6832fa1886994d99561c15c4d6198, type: 3}
+      objectReference: {fileID: 4207423834265295471, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
     - target: {fileID: 2934801391957107941, guid: 23fd6dd2a734db74b888dceb8fbf80fd, type: 3}
       propertyPath: _maximumSpawnTime
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2934801391957107941, guid: 23fd6dd2a734db74b888dceb8fbf80fd, type: 3}
       propertyPath: _minimumSpawnTime
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3815315432696070203, guid: 23fd6dd2a734db74b888dceb8fbf80fd, type: 3}
       propertyPath: m_Name
-      value: Strong Enemy B Spawner
+      value: Enemy C Spawner
       objectReference: {fileID: 0}
     - target: {fileID: 8002009796903455151, guid: 23fd6dd2a734db74b888dceb8fbf80fd, type: 3}
       propertyPath: m_LocalPosition.x

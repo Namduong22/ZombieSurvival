@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 544169121541386953, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
       propertyPath: _maxiumHealth
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 544169121541386953, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
       propertyPath: _currentHealth
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1250891356748590058, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59,6 +59,10 @@ PrefabInstance:
     - target: {fileID: 2951719389610848870, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
       propertyPath: _damageAmount
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631494445379794723, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
+      propertyPath: _changeOfCollectableDrop
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5407526696638102372, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
       propertyPath: m_Color.b
