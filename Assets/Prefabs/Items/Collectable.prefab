@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191319644a62e594daeb7896edc74561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _expiryTime: 10
+  _expiryTime: 15
 --- !u!114 &1142369091902701952
 MonoBehaviour:
   m_ObjectHideFlags: 0
