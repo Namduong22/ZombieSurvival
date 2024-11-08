@@ -236,6 +236,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damageAmount: 10
+  _bulletPrefab: {fileID: 7295875049307675150, guid: 6524ef841a1030d4a8942759d442d51e, type: 3}
+  _bulletSpeed: 8
+  _timeBetweenShots: 0.5
 --- !u!95 &1891202633578522125
 Animator:
   serializedVersion: 5
