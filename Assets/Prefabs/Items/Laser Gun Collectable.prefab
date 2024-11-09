@@ -111,4 +111,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 5922703038134995126, guid: 1b86f8ab3929a6a4a85d19aa0a35d1c9, type: 3}
   _bulletSpeed: 9
-  _timeBetweenShots: 0.5
+  _timeBetweenShots: 0.45

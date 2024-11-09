@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d1d32bbe90783b49b426a5e03849688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _changeOfCollectableDrop: 0.15
+  _changeOfCollectableDrop: 0.25
 --- !u!114 &8412918301103923406
 MonoBehaviour:
   m_ObjectHideFlags: 0

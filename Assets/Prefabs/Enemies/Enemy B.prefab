@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3631494445379794723, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
       propertyPath: _changeOfCollectableDrop
-      value: 0.2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5407526696638102372, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
       propertyPath: m_Color.b

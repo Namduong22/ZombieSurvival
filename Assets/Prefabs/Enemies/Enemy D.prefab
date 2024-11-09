@@ -82,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7937050111267679685, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
       propertyPath: _changeOfCollectableDrop
-      value: 0.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8409668382409631872, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
       propertyPath: _damageAmount
